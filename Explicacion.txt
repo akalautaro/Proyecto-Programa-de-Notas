@@ -7,3 +7,4 @@ Proyecto Python y MySql:
 - Si elegimos registro, crea un usuario en la DB
 - Si elegimos login, identifica al usuario y nos preguntará qué hacer
 - Crear nota, mostrar nota, borrar nota
+

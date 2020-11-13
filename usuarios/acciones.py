@@ -75,3 +75,5 @@ class Acciones:
         elif accion == "Salir":
             print(f"\nHasta pronto, {usuario[1]}!")
             exit()
+
+        

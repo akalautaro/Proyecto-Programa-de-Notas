@@ -43,3 +43,5 @@ class Acciones:
 
         else:
             print(f"No se ha borrado la nota, prueba luego.")
+
+        

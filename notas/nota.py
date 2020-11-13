@@ -37,3 +37,5 @@ class Nota:
         database.commit()
 
         return (cursor.rowcount, self)
+
+    

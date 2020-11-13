@@ -20,4 +20,4 @@ contenido   mediumtext,
 fecha       date not null,
 CONSTRAINT pk_notas PRIMARY KEY(id),
 CONSTRAINT fk_nota_usuario FOREIGN KEY(usuario_id) REFERENCES usuarios(id)
-)ENGINE=InnoDb;
+)ENGINE=InnoDb; 

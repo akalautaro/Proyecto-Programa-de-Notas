@@ -49,3 +49,4 @@ class Usuario:
         result = cursor.fetchone()
 
         return result
+        
