@@ -1,0 +1,9 @@
+Aplicacióm de consola que tendrá un registro y login.
+Guardará notas, las cuales podremos crear, eliminar y ver desde la misna.
+
+Proyecto Python y MySql:
+- Abrir asistente
+- Login o registro 
+- Si elegimos registro, crea un usuario en la DB
+- Si elegimos login, identifica al usuario y nos preguntará qué hacer
+- Crear nota, mostrar nota, borrar nota
