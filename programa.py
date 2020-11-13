@@ -16,4 +16,3 @@ if accion=="Registro":
     hazEl.registro() # Invoco método
 elif accion == "Login":
     hazEl.login() # Invoco método
-
