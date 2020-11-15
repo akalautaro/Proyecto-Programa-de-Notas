@@ -26,7 +26,16 @@ class Acciones:
 
     def login(self):
         print("\nIdentificate en el sistema: ")
-        
+        email = input("Introduzca su email: ")
+        password = input("Introduzca su contraseña: ")
+
+        usuario = modelo.Usuario('','',email, password)
+        login = usuario.identificar()
+
+        if email == login[3]:
+            print(f"\nBienvenido {login[1]}!")
+        self.proximasAcciones(login)
+
         try:
             email = input("Introduzca su email: ")
             password = input("Introduzca su contraseña: ")
@@ -39,8 +48,8 @@ class Acciones:
             self.proximasAcciones(login)
 
         except Exception as e:
-            # print(type(e))
-            # print(type(e).__name__)
+            print(type(e))
+            print(type(e).__name__)
             print(f"Credenciales incorrectas")
 
     def proximasAcciones(self, usuario):
@@ -75,5 +84,3 @@ class Acciones:
         elif accion == "Salir":
             print(f"\nHasta pronto, {usuario[1]}!")
             exit()
-
-        

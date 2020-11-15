@@ -1,4 +1,3 @@
-import mysql
 from usuarios import acciones # Importo modulos desde paquete
 from usuarios import usuario # Importo modulos desde paquete
 

@@ -30,12 +30,11 @@ class Nota:
         return result
 
     def eliminar(self):
-        sql = f"DELETE FROM notas WHERE usuario_id = {self.usuario_id} AND titulo = {self.titulo}" # Si uso AND titulo LIKE '%titulo%' borro donde está contenido el título
-        # nota = (self.usuario_id, self.titulo)
-
-        cursor.execute(sql)
+        sql = f"DELETE FROM notas WHERE usuario_id = %s AND titulo = %s" # Si uso AND titulo LIKE '%titulo%' borro donde está contenido el título
+        
+        nota = (self.usuario_id, self.titulo)
+        
+        cursor.execute(sql, nota)
         database.commit()
 
         return (cursor.rowcount, self)
-
-    

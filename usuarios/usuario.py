@@ -41,7 +41,7 @@ class Usuario:
         # Cifrar contraseña
         cifrado = hashlib.sha256()
         cifrado.update(self.password.encode('utf8')) 
-        
+
         # Datos para la consulta
         usuario = (self.email, cifrado.hexdigest())
 
@@ -49,4 +49,3 @@ class Usuario:
         result = cursor.fetchone()
 
         return result
-        

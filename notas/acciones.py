@@ -1,4 +1,4 @@
-import notas.nota as modelo
+from notas import nota as modelo
 
 class Acciones:
 
@@ -35,7 +35,8 @@ class Acciones:
 
         titulo = input("Introduce el titulo de la nota que quieres borrar: ")
 
-        nota = modelo.Nota(usuario[0], titulo)
+        # nota = modelo.Nota(usuario[0], titulo)
+        nota = modelo.Nota(usuario[0], titulo,'')
         eliminar = nota.eliminar()
 
         if eliminar[0]>=1:
@@ -44,4 +45,3 @@ class Acciones:
         else:
             print(f"No se ha borrado la nota, prueba luego.")
 
-        
